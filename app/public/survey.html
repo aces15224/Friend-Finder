@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder </title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Compatibility Survey</h1>
+      <hr>
+      <h3>Find the right friend for you!</h3>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <h3><strong>About you</strong></h3>
+          </div>
+          <div class="card-body">
+            <form method="POST" role="form">
+
+            <div class="form-group">
+                <label for="name">Name (required)</label>
+                <input type="text" class="form-control" id="name">
+            </div> 
+
+            <div class="form-group">
+                <label for="name">Link to Photo Image (required)</label>
+                <input type="text" class="form-control" id="profileImage">
+            </div> 
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                    <select class="form-control" id="exampleFormControlSelect1" placeholder="Select an Option">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Generally speaking, you rely more on your experience than your imagination.</label>
+                    <select class="form-control" id="exampleFormControlSelect2">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+         <div class="form-group">
+                <label for="exampleFormControlSelect3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                    <select class="form-control" id="exampleFormControlSelect3">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect4">You rarely do something just out of sheer curiosity.</label>
+                    <select class="form-control" id="exampleFormControlSelect4">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect5">People can rarely upset you.</label>
+                    <select class="form-control" id="exampleFormControlSelect5">
+                    <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect6">It is often difficult for you to relate to other people’s feelings.</label>
+                    <select class="form-control" id="exampleFormControlSelect6">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                    <select class="form-control" id="exampleFormControlSelect7">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect8">You rarely get carried away by fantasies and ideas.</label>
+                    <select class="form-control" id="exampleFormControlSelect8">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                    <select class="form-control" id="exampleFormControlSelect9">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect10">You feel more energetic after spending time with a group of people.</label>
+                    <select class="form-control" id="exampleFormControlSelect10">
+                      <option disabled selected hidden>Select an Option</option>
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly agree)</option>
+                    </select>
+            </div>
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+      <a href="/api/friends">Friends List</a>
+      <a href="https://github.com/aces15224/Friend-Finder">GitHub Repository</a>
+  </footer>
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newCharacter = {
+        name: $("#name").val().trim(),
+        role: $("#role").val().trim(),
+        age: $("#age").val().trim(),
+        forcePoints: $("#force-points").val().trim()
+      };
+
+      // Question: What does this code do??
+      $.post("/api/characters", newCharacter)
+        .then(function(data) {
+          console.log("add.html", data);
+          alert("Adding character...");
+        });
+    });
+  </script>
+
+</body>
+</html>
