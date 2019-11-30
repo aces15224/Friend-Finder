@@ -37,8 +37,8 @@
                 <input type="text" class="form-control" id="profileImage">
             </div> 
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
-                    <select class="form-control" id="exampleFormControlSelect1" placeholder="Select an Option">
+                <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                    <select class="form-control" id="q1">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -48,8 +48,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect2">Generally speaking, you rely more on your experience than your imagination.</label>
-                    <select class="form-control" id="exampleFormControlSelect2">
+                <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+                    <select class="form-control" id="q2">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -59,8 +59,8 @@
                     </select>
             </div>
          <div class="form-group">
-                <label for="exampleFormControlSelect3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-                    <select class="form-control" id="exampleFormControlSelect3">
+                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                    <select class="form-control" id="q3">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -70,8 +70,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect4">You rarely do something just out of sheer curiosity.</label>
-                    <select class="form-control" id="exampleFormControlSelect4">
+                <label for="q4">You rarely do something just out of sheer curiosity.</label>
+                    <select class="form-control" id="q4">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -81,8 +81,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect5">People can rarely upset you.</label>
-                    <select class="form-control" id="exampleFormControlSelect5">
+                <label for="q5">People can rarely upset you.</label>
+                    <select class="form-control" id="q5">
                     <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -92,8 +92,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect6">It is often difficult for you to relate to other people’s feelings.</label>
-                    <select class="form-control" id="exampleFormControlSelect6">
+                <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+                    <select class="form-control" id="q6">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -103,8 +103,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect7">In a discussion, truth should be more important than people’s sensitivities.</label>
-                    <select class="form-control" id="exampleFormControlSelect7">
+                <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                    <select class="form-control" id="q7">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -114,8 +114,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect8">You rarely get carried away by fantasies and ideas.</label>
-                    <select class="form-control" id="exampleFormControlSelect8">
+                <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+                    <select class="form-control" id="q8">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -125,8 +125,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-                    <select class="form-control" id="exampleFormControlSelect9">
+                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                    <select class="form-control" id="q9">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -136,8 +136,8 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect10">You feel more energetic after spending time with a group of people.</label>
-                    <select class="form-control" id="exampleFormControlSelect10">
+                <label for="q10">You feel more energetic after spending time with a group of people.</label>
+                    <select class="form-control" id="q10">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
@@ -155,27 +155,70 @@
       </div>
     </div>
   </div>
+  <div id="friendModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your Match!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 id="matchName"></h3>
+          <img id="matchImage" src="#"> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
       <a href="/api/friends">Friends List</a>
       <a href="https://github.com/aces15224/Friend-Finder">GitHub Repository</a>
   </footer>
 
   <script type="text/javascript">
-    // Question: What does this code do?
+
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
-      var newCharacter = {
+      var valid=true;
+      if($("#name").val()===" "||$("#profileImage").val()===''||$("#q1").val()===''||$("#q2").val()===''||$("#q3").val()==='' ||$("#q4").val()===''
+      ||$("#q5").val()===''||$("#q6").val()===''       ||$("#q7").val()==='' ||$("#q8").val()==='' ||$("#q9").val()===''||$("#q10").val()===''){
+      valid=false;
+      }
+      else{
+      var newFriend = {
         name: $("#name").val().trim(),
-        role: $("#role").val().trim(),
-        age: $("#age").val().trim(),
-        forcePoints: $("#force-points").val().trim()
+        photo: $("#profileImage").val().trim(),
+        scores: [
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
+        ]
       };
+    }
+     
+       
+      
+      
+			var currentURL = window.location.origin;
 
-      // Question: What does this code do??
-      $.post("/api/characters", newCharacter)
+      $.post(currentURL + "/api/friends", newFriend)
         .then(function(data) {
-          console.log("add.html", data);
-          alert("Adding character...");
+          $("#matchName").html(data.name)
+          $("#matchImage").html(data.photo)
+          $("#friendModal").modal("toggle")
+          alert("Works!")
         });
     });
   </script>
