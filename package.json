@@ -1,0 +1,27 @@
+{
+  "name": "Friend-Finder",
+  "version": "1.0.0",
+  "description": "Assignment 2-2",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aces15224/Friend-Finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aces15224/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/aces15224/Friend-Finder#readme"
+}
