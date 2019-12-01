@@ -2,26 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Friend Finder </title>
+  <title>Villain Match</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
+<style>
+body{
+  background-image: url("https://wallpapercave.com/wp/ykQZDJf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: auto;
+  height: auto;
+}
+.jumbotron{
+  text-align:center;
+  position:relative;
+  top:100px;
+}
+p{ 
+  color: red;
+  font-size: 75px;
+  font-family: 'Odibee Sans', cursive;
+}
+button{
+  background-color:black;
+  color:yellow;
+}
+footer{
+  position:relative;
+  top:80px;
+  text-align:right;
+}
+span,a{
+  font-size:25px;
+  color:red;
+  padding:5px;
+}
+</style>
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Compatibility Survey</h1>
-      <h3>Find the right friend for you!</h3>
+      <p>Villain Match<p>
+      <h3>Find the right foe for you!</h3>
       <hr>
-    <a href="./survey"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span>Take the compatibility quiz!</button></a>
+    <a href="./survey"><button class="btn btn-lg"><span class="fa fa-eye"></span>Take the compatibility quiz!</button></a>
     </div>
 
  <footer class="footer">
       <a href="/api/friends">Friends List</a>
+      <span>|</span>
       <a href="https://github.com/aces15224/Friend-Finder">GitHub Repository</a>
   </footer>
   

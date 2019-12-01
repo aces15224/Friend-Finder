@@ -2,21 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Friend Finder </title>
+  <title>Villain Match </title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
+<style>
+body{
+  background-image: url("https://wallpapercave.com/wp/ykQZDJf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  width: auto;
+  height: auto;
+}
+#friendModal{
+  width:350px;
+  margin:auto;
+}
+
+#matchImage{
+  height:200px;
+  max-width: 300px;
+  margin:auto;
+}
+.jumbotron{
+    text-align:center; 
+}
+p{ 
+    color: red;
+    font-size: 75px;
+    font-family: 'Odibee Sans', cursive;
+}
+footer{
+  text-align:right;
+}
+span,a{
+  font-size:15px;
+  color:red;
+  padding:5px;
+}
+
+</style>
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Compatibility Survey</h1>
+      <p>Compatibility Survey</p>
       <hr>
-      <h3>Find the right friend for you!</h3>
+      <h3>Find the right foe for you!</h3>
     </div>
     <div class="row">
       <div class="col-12">
@@ -37,7 +75,7 @@
                 <input type="text" class="form-control" id="profileImage">
             </div> 
             <div class="form-group">
-                <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q1">You often laugh at inappropriate things.</label>
                     <select class="form-control" id="q1">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -48,7 +86,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+                <label for="q2">You enjoy the company of animals.</label>
                     <select class="form-control" id="q2">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -59,7 +97,7 @@
                     </select>
             </div>
          <div class="form-group">
-                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <label for="q3">You consider yourself intellectually superior.</label>
                     <select class="form-control" id="q3">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -70,7 +108,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q4">You rarely do something just out of sheer curiosity.</label>
+                <label for="q4">When you make plans, you stick to them.</label>
                     <select class="form-control" id="q4">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -81,7 +119,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q5">People can rarely upset you.</label>
+                <label for="q5">You consider yourself classy.</label>
                     <select class="form-control" id="q5">
                     <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -92,7 +130,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+                <label for="q6">Loyalty is important to you.</label>
                     <select class="form-control" id="q6">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -103,7 +141,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                <label for="q7">Money is something you are passionate about.</label>
                     <select class="form-control" id="q7">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -114,7 +152,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+                <label for="q8">You are a private person.</label>
                     <select class="form-control" id="q8">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -125,7 +163,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                <label for="q9">You work alone.</label>
                     <select class="form-control" id="q9">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -136,7 +174,7 @@
                     </select>
             </div>
             <div class="form-group">
-                <label for="q10">You feel more energetic after spending time with a group of people.</label>
+                <label for="q10">You rely on tricks to win fights.</label>
                     <select class="form-control" id="q10">
                       <option disabled selected hidden>Select an Option</option>
                       <option value="1">1 (strongly disagree)</option>
@@ -156,7 +194,7 @@
     </div>
   </div>
   <div id="friendModal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Your Match!</h5>
@@ -177,8 +215,10 @@
 
   <footer class="footer">
       <a href="/api/friends">Friends List</a>
+      <span>|</span>
       <a href="https://github.com/aces15224/Friend-Finder">GitHub Repository</a>
   </footer>
+  
 
   <script type="text/javascript">
 
@@ -207,21 +247,18 @@
         ]
       };
     }
-     
-       
-      
-      
-			var currentURL = window.location.origin;
+     var currentURL = window.location.origin;
 
       $.post(currentURL + "/api/friends", newFriend)
         .then(function(data) {
           $("#matchName").html(data.name)
-          $("#matchImage").html(data.photo)
+          $("#matchImage").attr("src", data.photo)
           $("#friendModal").modal("toggle")
           alert("Works!")
         });
     });
   </script>
+  
 
 </body>
 </html>
