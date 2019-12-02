@@ -25,13 +25,11 @@ for(let i=0; i<newfriend.scores.length; i++){
       totalDifference+=valueDifference
       console.log(totalDifference)
     } 
-    
+
   if(totalDifference<friendStandard){
     friendStandard=totalDifference;
     matchIndex=i;
   }
-
-
 }
 friends.push(newfriend);
   res.json(friends[matchIndex]);   
