@@ -2,19 +2,14 @@ var friends = require("../data/friends.js");
 
 
 module.exports = function(app) {
-app.get("/api/friends", function(req, res) {
+app.get("/api/villains", function(req, res) {
     res.json(friends);
     
   });
  
-app.post("/api/friends", function(req, res) {
+app.post("/api/villains", function(req, res) {
 
   var newfriend = req.body;
-
-  // console.log(newfriend);
-
-
-  // res.json(newfriend);
 
 for(let i=0; i<newfriend.scores.length; i++){
     newfriend.scores[i]=parseInt(newfriend.scores[i]);
@@ -40,18 +35,9 @@ for(let i=0; i<newfriend.scores.length; i++){
 friends.push(newfriend);
   res.json(friends[matchIndex]);
 
-    // console.log(friends[matchIndex])
 
     
 });
-
-
-console.log("hello")
-
-
-
-
-
 }
 
 

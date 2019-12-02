@@ -214,9 +214,9 @@ span,a{
   </div>
 
   <footer class="footer">
-      <a href="/api/friends">Friends List</a>
+      <a href="/api/villains">Villain List</a>
       <span>|</span>
-      <a href="https://github.com/aces15224/Friend-Finder">GitHub Repository</a>
+      <a href="https://github.com/aces15224/Villain-Match">GitHub Repository</a>
   </footer>
   
 
@@ -249,12 +249,11 @@ span,a{
     }
      var currentURL = window.location.origin;
 
-      $.post(currentURL + "/api/friends", newFriend)
+      $.post(currentURL + "/api/villains", newFriend)
         .then(function(data) {
           $("#matchName").html(data.name)
           $("#matchImage").attr("src", data.photo)
           $("#friendModal").modal("toggle")
-          alert("Works!")
         });
     });
   </script>
